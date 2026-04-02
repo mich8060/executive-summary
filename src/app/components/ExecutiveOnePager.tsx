@@ -10,7 +10,7 @@ export default function ExecutiveOnePager() {
         {/* Header */}
         <div className="mb-[48px] print:break-inside-avoid text-[24px]">
           <h1 className="text-[48px] font-bold leading-[48px] text-black mb-1">
-            Design System Executive Update
+            Design System Update
           </h1>
           <div className="flex gap-[6px] leading-[29px] mb-[24px] text-gray-500">
             <div>March 2026</div>
@@ -21,7 +21,7 @@ export default function ExecutiveOnePager() {
 
         {/* Headline */}
         <div className="border-l-[4px] border-[#1BA5DE] bg-gray-50 rounded-r-[16px] p-[20px] mb-[48px] print:break-inside-avoid">
-          <p className="text-[24px] leading-[34px] text-black font-semibold">
+          <p className="text-[24px] leading-[34px] text-black font-medium">
             The Design System is establishing a production-ready
             React foundation that enables teams to move from
             design to code with minimal translation.
@@ -33,8 +33,8 @@ export default function ExecutiveOnePager() {
           <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
             Roadmap Status
           </div>
-          <div className="border border-gray-200 rounded-[12px] overflow-hidden">
-            <table className="w-full">
+          <div className="border border-gray-200 rounded-[12px] overflow-hidden overflow-x-auto">
+            <table className="w-full min-w-[720px]">
               <thead className="bg-gray-50">
                 <tr>
                   <th className="text-left px-[24px] py-[16px] text-[14px] font-semibold text-gray-700 font-bold">
@@ -251,12 +251,50 @@ export default function ExecutiveOnePager() {
           </div>
         </div>
 
+        {/* Live roadmap (embedded tool) */}
+        <div className="mb-[48px] print:hidden">
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+            Roadmap
+          </div>
+          <div className="relative border border-gray-200 rounded-[12px] overflow-hidden bg-gray-50 h-[min(560px,70vh)] min-h-[320px]">
+            <iframe
+              src="https://roadmap-brown-nine.vercel.app/"
+              title="Design System Roadmap"
+              className="w-full h-full border-0"
+            />
+            <a
+              href="https://roadmap-brown-nine.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Design System roadmap in a new tab"
+              className="absolute bottom-[20px] right-[20px] z-10 flex size-[48px] items-center justify-center rounded-[12px] border border-gray-200 bg-white shadow-lg transition-all duration-200 hover:border-[#1BA5DE] hover:shadow-xl"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                className="shrink-0"
+                aria-hidden
+              >
+                <path
+                  d="M13 3H17V7M17 3L10 10M7 3H4C3.44772 3 3 3.44772 3 4V16C3 16.5523 3.44772 17 4 17H16C16.5523 17 17 16.5523 17 16V13"
+                  stroke="#1BA5DE"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
         {/* Bottom Line */}
         <div className="bg-[#7FBD4D]/10 rounded-[16px] p-[48px] print:break-inside-avoid">
           <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[24px]">
             Bottom Line
           </div>
-          <p className="text-[28px] leading-[40px] text-black font-semibold">
+          <p className="text-[24px] leading-[32px] text-black font-regular">
             We are shifting from designing interfaces to
             delivering production-ready systems—enabling faster,
             scalable, and more consistent product delivery.
@@ -268,16 +306,15 @@ export default function ExecutiveOnePager() {
           <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
             Reference
           </div>
-          <div className="grid grid-cols-3 gap-[16px]">
+          <div className="grid grid-cols-1 items-start gap-[16px] sm:grid-cols-2">
             {[
               { text: "Impact Analysis v3", href: "https://www.figma.com/deck/LtEBjdROWti4uVL4WM0255" },
-              { text: "Design System 2026 Roadmap", href: "#" },
               { text: "Unified DS Documentation", href: "https://unified-design-system-docs-zgkp.vercel.app/" },
             ].map((item, i) => (
               <a
                 key={i}
                 href={item.href}
-                className="flex items-start justify-between gap-[12px] bg-gradient-to-br from-[#1BA5DE]/5 to-[#1BA5DE]/10 border-2 border-[#1BA5DE]/20 rounded-[12px] p-[24px] hover:border-[#1BA5DE] hover:shadow-lg transition-all duration-200"
+                className="flex w-full items-start justify-between gap-[12px] bg-gradient-to-br from-[#1BA5DE]/5 to-[#1BA5DE]/10 border-2 border-[#1BA5DE]/20 rounded-[12px] p-[24px] hover:border-[#1BA5DE] hover:shadow-lg transition-all duration-200"
               >
                 <div className="text-[16px] leading-[24px] text-black font-semibold">
                   {item.text}
