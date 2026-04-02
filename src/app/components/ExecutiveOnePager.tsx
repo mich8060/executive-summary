@@ -13,7 +13,7 @@ export default function ExecutiveOnePager() {
             Design System Update
           </h1>
           <div className="flex gap-[6px] leading-[29px] mb-[24px] text-gray-500">
-            <div>March 2026</div>
+            <div>April 2026</div>
             <div>&mdash;</div>
             <div>Michael Stevens, Design System Manager</div>
           </div>
