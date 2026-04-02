@@ -1,13 +1,18 @@
+import { roadmapStatusRows } from "../data/roadmapStatus";
+import { RoadmapLinkedRisks } from "./RoadmapLinkedRisks";
+
 export default function ExecutiveOnePager() {
+  const roadmapRows = roadmapStatusRows;
+
   return (
     <div className="relative w-full min-h-screen bg-white overflow-auto">
       <div className="max-w-[1400px] mx-auto px-[110px] py-[80px]">
         {/* Header */}
-        <div className="mb-[48px] print:break-inside-avoid">
-          <h1 className="text-[64px] font-bold leading-[60px] text-black mb-[16px]">
+        <div className="mb-[48px] print:break-inside-avoid text-[24px]">
+          <h1 className="text-[48px] font-bold leading-[48px] text-black">
             Design System Executive Update
           </h1>
-          <div className="flex gap-[8px] text-[24px] mb-[24px] text-gray-700">
+          <div className="flex gap-[6px] leading-[29px] mb-[24px] text-gray-500">
             <div>March 2026</div>
             <div>&mdash;</div>
             <div>Michael Stevens, Design System Manager</div>
@@ -15,8 +20,8 @@ export default function ExecutiveOnePager() {
         </div>
 
         {/* Headline */}
-        <div className="border-l-[8px] border-[#1BA5DE] bg-gray-50 rounded-r-[16px] p-[36px] mb-[48px] print:break-inside-avoid">
-          <p className="text-[32px] leading-[44px] text-black font-semibold">
+        <div className="border-l-[4px] border-[#1BA5DE] bg-gray-50 rounded-r-[16px] p-[20px] mb-[48px] print:break-inside-avoid">
+          <p className="text-[24px] leading-[34px] text-black font-semibold">
             The Design System is establishing a production-ready
             React foundation that enables teams to move from
             design to code with minimal translation.
@@ -47,43 +52,7 @@ export default function ExecutiveOnePager() {
                 </tr>
               </thead>
               <tbody>
-                {[
-                  {
-                    initiative: "React Production Baseline",
-                    status: "In Progress",
-                    statusColor: "#1BA5DE",
-                    outcome: "Teams can build directly from DS React components",
-                    milestone: "Component library expansion",
-                  },
-                  {
-                    initiative: "Documents MVT Pilot",
-                    status: "In Progress",
-                    statusColor: "#1BA5DE",
-                    outcome: "Validated DS → React delivery model",
-                    milestone: "React component validation",
-                  },
-                  {
-                    initiative: "Governance Model",
-                    status: "At Risk",
-                    statusColor: "#FE8C31",
-                    outcome: "Clear ownership, standards, and scaling model",
-                    milestone: "Resourcing decision needed",
-                  },
-                  {
-                    initiative: "Locumsmart Deployment",
-                    status: "Pending",
-                    statusColor: "#6B7280",
-                    outcome: "First full product running on DS patterns",
-                    milestone: "Tier rollout",
-                  },
-                  {
-                    initiative: "Usage Standardization",
-                    status: "In Progress",
-                    statusColor: "#1BA5DE",
-                    outcome: "Consistent system adoption across teams",
-                    milestone: "Adoption guidelines",
-                  },
-                ].map((row, i) => (
+                {roadmapRows.map((row, i) => (
                   <tr
                     key={i}
                     className="border-t border-gray-200"
@@ -99,7 +68,7 @@ export default function ExecutiveOnePager() {
                     </td>
                     <td className="px-[24px] py-[20px] text-right">
                       <span
-                        className="block px-[12px] py-[4px] rounded-full text-[14px] font-semibold text-white text-center"
+                        className={`block px-[12px] py-[4px] rounded-full text-[14px] font-semibold text-center ${row.statusTextClass ?? "text-white"}`}
                         style={{
                           backgroundColor: row.statusColor,
                         }}
@@ -254,19 +223,9 @@ export default function ExecutiveOnePager() {
           </div>
         </div>
 
-        {/* Key Risks */}
-        <div className="bg-[#FE8C31]/10 border-l-[6px] border-[#FE8C31] rounded-[12px] p-[32px] mb-[48px] print:break-inside-avoid">
-          <div className="text-[14px] font-bold tracking-[0.15em] text-[#FE8C31] mb-[16px]">
-            KEY RISKS
-          </div>
-          <h3 className="text-[24px] font-bold text-black mb-[12px]">
-            Capacity Constraint — System Ownership
-          </h3>
-          <p className="text-[18px] leading-[28px] text-gray-700">
-            Current model relies on a single contributor across
-            design and engineering. Scaling adoption will exceed
-            capacity. Decision needed on resourcing.
-          </p>
+        {/* Key Risks — driven by At Risk / Blocked rows in Roadmap Status */}
+        <div className="mb-[48px]">
+          <RoadmapLinkedRisks />
         </div>
 
         {/* Next 30 Days */}
