@@ -142,87 +142,6 @@ export default function ExecutiveOnePager() {
           </div>
         </div>
 
-        {/* Two Column Layout */}
-        <div className="grid grid-cols-2 gap-[48px] mb-[48px] print:break-inside-avoid">
-          {/* Why This Matters */}
-          <div>
-            <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
-              Why This Matters
-            </div>
-            <ul className="space-y-[16px]">
-              {[
-                "Reduces rework across design and engineering",
-                "Creates a shared system for consistent product delivery",
-                "Accelerates speed to production across initiatives",
-                "Establishes foundation for AI-assisted development",
-              ].map((item, i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-[12px]"
-                >
-                  <div className="w-[8px] h-[8px] rounded-full bg-[#1BA5DE] mt-[10px] flex-shrink-0" />
-                  <span className="text-[18px] leading-[28px] text-gray-700">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Value Snapshot */}
-          <div>
-            <div className="text-[14px] font-bold tracking-[0.15em] text-[#7FBD4D] mb-[24px]">
-              VALUE SNAPSHOT
-            </div>
-            <div className="space-y-[20px]">
-              {[
-                {
-                  metric: "Components in production",
-                  target: "Full library",
-                  current: "Growing baseline",
-                },
-                {
-                  metric: "Active teams using DS",
-                  target: "All initiatives",
-                  current: "Early adoption",
-                },
-                {
-                  metric: "Engineering capacity freed",
-                  target: "20.5 FTEs",
-                  current: "Projected",
-                },
-                {
-                  metric: "UX capacity freed",
-                  target: "4.9 FTEs",
-                  current: "Projected",
-                },
-                {
-                  metric: "Design → Build cycle time",
-                  target: "-50%",
-                  current: "Improving",
-                },
-              ].map((row, i) => (
-                <div
-                  key={i}
-                  className="border-b border-gray-200 pb-[12px]"
-                >
-                  <div className="text-[18px] font-semibold text-black mb-[8px]">
-                    {row.metric}
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-[14px] font-normal text-gray-600">
-                      <span className="font-bold">Target:</span> {row.target}
-                    </span>
-                    <span className="text-[14px] text-[#7FBD4D] font-normal">
-                      {row.current}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Key Risks — driven by At Risk / Blocked rows in Roadmap Status */}
         <div className="mb-[48px]">
           <RoadmapLinkedRisks />
@@ -286,6 +205,85 @@ export default function ExecutiveOnePager() {
                 />
               </svg>
             </a>
+          </div>
+        </div>
+
+        {/* Why This Matters + Value Snapshot (below embedded roadmap) */}
+        <div className="grid grid-cols-2 gap-[48px] mb-[48px] print:break-inside-avoid">
+          <div>
+            <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+              Why This Matters
+            </div>
+            <ul className="space-y-[16px]">
+              {[
+                "Reduces rework across design and engineering",
+                "Creates a shared system for consistent product delivery",
+                "Accelerates speed to production across initiatives",
+                "Establishes foundation for AI-assisted development",
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-[12px]"
+                >
+                  <div className="w-[8px] h-[8px] rounded-full bg-[#1BA5DE] mt-[10px] flex-shrink-0" />
+                  <span className="text-[18px] leading-[28px] text-gray-700">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <div className="text-[14px] font-bold tracking-[0.15em] text-[#7FBD4D] mb-[24px]">
+              VALUE SNAPSHOT
+            </div>
+            <div className="space-y-[20px]">
+              {[
+                {
+                  metric: "Components in production",
+                  target: "Full library",
+                  current: "Growing baseline",
+                },
+                {
+                  metric: "Active teams using DS",
+                  target: "All initiatives",
+                  current: "Early adoption",
+                },
+                {
+                  metric: "Engineering capacity freed",
+                  target: "20.5 FTEs",
+                  current: "Projected",
+                },
+                {
+                  metric: "UX capacity freed",
+                  target: "4.9 FTEs",
+                  current: "Projected",
+                },
+                {
+                  metric: "Design → Build cycle time",
+                  target: "-50%",
+                  current: "Improving",
+                },
+              ].map((row, i) => (
+                <div
+                  key={i}
+                  className="border-b border-gray-200 pb-[12px]"
+                >
+                  <div className="text-[18px] font-semibold text-black mb-[8px]">
+                    {row.metric}
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-[14px] font-normal text-gray-600">
+                      <span className="font-bold">Target:</span> {row.target}
+                    </span>
+                    <span className="text-[14px] text-[#7FBD4D] font-normal">
+                      {row.current}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
