@@ -9,7 +9,7 @@ export default function ExecutiveOnePager() {
       <div className="max-w-[1400px] mx-auto px-[110px] py-[80px]">
         {/* Header */}
         <div className="mb-[48px] print:break-inside-avoid text-[24px]">
-          <h1 className="text-[48px] font-bold leading-[48px] text-black">
+          <h1 className="text-[48px] font-bold leading-[48px] text-black mb-1">
             Design System Executive Update
           </h1>
           <div className="flex gap-[6px] leading-[29px] mb-[24px] text-gray-500">
@@ -30,8 +30,8 @@ export default function ExecutiveOnePager() {
 
         {/* Roadmap Status */}
         <div className="mb-[48px] print:break-inside-avoid">
-          <div className="text-[14px] font-bold tracking-[0.15em] text-[#1BA5DE] mb-[24px]">
-            ROADMAP STATUS
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+            Roadmap Status
           </div>
           <div className="border border-gray-200 rounded-[12px] overflow-hidden">
             <table className="w-full">
@@ -85,8 +85,8 @@ export default function ExecutiveOnePager() {
 
         {/* Progress This Month */}
         <div className="mb-[48px] print:break-inside-avoid">
-          <div className="text-[14px] font-bold tracking-[0.15em] text-[#7FBD4D] mb-[24px]">
-            PROGRESS THIS MONTH
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[24px]">
+            Progress This Month
           </div>
           <div className="grid grid-cols-2 gap-[24px]">
             {[
@@ -146,8 +146,8 @@ export default function ExecutiveOnePager() {
         <div className="grid grid-cols-2 gap-[48px] mb-[48px] print:break-inside-avoid">
           {/* Why This Matters */}
           <div>
-            <div className="text-[14px] font-bold tracking-[0.15em] text-[#1BA5DE] mb-[24px]">
-              WHY THIS MATTERS
+            <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+              Why This Matters
             </div>
             <ul className="space-y-[16px]">
               {[
@@ -230,8 +230,8 @@ export default function ExecutiveOnePager() {
 
         {/* Next 30 Days */}
         <div className="mb-[48px] print:break-inside-avoid">
-          <div className="text-[14px] font-bold tracking-[0.15em] text-[#1BA5DE] mb-[24px]">
-            NEXT 30 DAYS
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+            Next 30 Days
           </div>
           <div className="flex gap-[24px]">
             {[
@@ -253,8 +253,8 @@ export default function ExecutiveOnePager() {
 
         {/* Bottom Line */}
         <div className="bg-[#7FBD4D]/10 rounded-[16px] p-[48px] print:break-inside-avoid">
-          <div className="text-[14px] font-bold tracking-[0.15em] text-[#7FBD4D] mb-[24px]">
-            BOTTOM LINE
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[24px]">
+            Bottom Line
           </div>
           <p className="text-[28px] leading-[40px] text-black font-semibold">
             We are shifting from designing interfaces to
@@ -265,8 +265,8 @@ export default function ExecutiveOnePager() {
 
         {/* Reference */}
         <div className="mt-[48px] print:break-inside-avoid">
-          <div className="text-[14px] font-bold tracking-[0.15em] text-[#1BA5DE] mb-[24px]">
-            REFERENCE
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+            Reference
           </div>
           <div className="grid grid-cols-3 gap-[16px]">
             {[

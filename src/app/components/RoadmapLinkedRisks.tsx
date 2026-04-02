@@ -16,9 +16,9 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
 
   return (
     <div className={`print:break-inside-avoid ${className}`}>
-      <div className="bg-[#FE8C31]/10 border-l-[6px] border-[#FE8C31] rounded-[12px] p-[32px]">
-        <div className="text-[14px] font-bold tracking-[0.15em] text-[#FE8C31] mb-[8px]">
-          KEY RISKS
+      <div>
+        <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#FE8C31] mb-[12px]">
+          Key Risks
         </div>
         <p className="text-[15px] leading-[24px] text-gray-600 mb-[24px]">
           Directly tied to{" "}
