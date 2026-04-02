@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+
+# Build
+dist
+dist-ssr
+*.local
+
+# Editor / OS
+.DS_Store
+*.sw?
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env (keep secrets out of git)
+.env
+.env.*.local
+
+# Vite
+.vite

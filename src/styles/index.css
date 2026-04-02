@@ -1,0 +1,217 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Print Styles */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.25in;
+  }
+  
+  html, body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    height: auto;
+    overflow: visible;
+  }
+  
+  body > div {
+    min-height: auto !important;
+  }
+  
+  .max-w-\[1400px\] {
+    max-width: 100% !important;
+    padding: 0.25in !important;
+    font-size: 7px !important;
+  }
+  
+  /* Scale down all text proportionally */
+  h1 {
+    font-size: 28px !important;
+    line-height: 30px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .text-\[24px\] {
+    font-size: 10px !important;
+  }
+  
+  .text-\[32px\] {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  
+  .text-\[28px\] {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  
+  .text-\[18px\] {
+    font-size: 9px !important;
+    line-height: 13px !important;
+  }
+  
+  .text-\[16px\] {
+    font-size: 7px !important;
+    line-height: 10px !important;
+  }
+  
+  .text-\[14px\] {
+    font-size: 7px !important;
+  }
+  
+  /* Scale down spacing */
+  .mb-\[48px\] {
+    margin-bottom: 16px !important;
+  }
+  
+  .mb-\[24px\] {
+    margin-bottom: 10px !important;
+  }
+  
+  .mb-\[16px\] {
+    margin-bottom: 6px !important;
+  }
+  
+  .p-\[48px\], .p-\[36px\] {
+    padding: 16px !important;
+  }
+  
+  .p-\[24px\] {
+    padding: 10px !important;
+  }
+  
+  .px-\[24px\] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  
+  .py-\[16px\] {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
+  
+  .py-\[12px\] {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  
+  .gap-\[24px\] {
+    gap: 10px !important;
+  }
+  
+  .gap-\[16px\] {
+    gap: 6px !important;
+  }
+  
+  .gap-\[12px\] {
+    gap: 5px !important;
+  }
+  
+  .gap-\[8px\] {
+    gap: 4px !important;
+  }
+  
+  .rounded-\[16px\] {
+    border-radius: 8px !important;
+  }
+  
+  .rounded-\[12px\] {
+    border-radius: 6px !important;
+  }
+  
+  .border-l-\[8px\] {
+    border-left-width: 3px !important;
+  }
+  
+  /* Make tables more compact */
+  table {
+    font-size: 6px !important;
+  }
+  
+  th, td {
+    padding: 4px 8px !important;
+  }
+  
+  /* Status column - fit content */
+  th:last-child,
+  td:last-child {
+    width: 1% !important;
+    white-space: nowrap !important;
+  }
+  
+  /* Progress This Month - vertical centering and reduced padding */
+  .p-\[20px\] {
+    padding: 8px !important;
+  }
+  
+  .rounded-\[8px\] {
+    border-radius: 4px !important;
+  }
+  
+  /* Progress This Month - shrink icons */
+  .w-\[24px\] {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  
+  .h-\[24px\] {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  
+  .w-\[24px\] svg,
+  .h-\[24px\] svg {
+    width: 8px !important;
+    height: 8px !important;
+  }
+  
+  /* Add space between elements */
+  .space-y-\[16px\] > * + * {
+    margin-top: 6px !important;
+  }
+  
+  /* Reduce page margins to fit more content */
+  @page {
+    margin: 0.2in !important;
+  }
+  
+  .max-w-\[1400px\] {
+    max-width: 100% !important;
+    padding: 0.2in !important;
+    font-size: 7px !important;
+  }
+  
+  /* Additional spacing reductions to fit on one page */
+  .py-\[80px\] {
+    padding-top: 24px !important;
+    padding-bottom: 0.2in !important;
+  }
+  
+  .px-\[110px\] {
+    padding-left: 0.2in !important;
+    padding-right: 0.2in !important;
+  }
+  
+  .mt-\[48px\], .mt-\[60px\] {
+    margin-top: 12px !important;
+  }
+  
+  .mt-\[32px\] {
+    margin-top: 8px !important;
+  }
+  
+  .py-\[20px\] {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+  
+  .p-\[32px\] {
+    padding: 12px !important;
+  }
+  
+  .border-l-\[6px\] {
+    border-left-width: 2px !important;
+  }
+}
