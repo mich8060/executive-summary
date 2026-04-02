@@ -291,7 +291,7 @@ export default function ExecutiveOnePager() {
 
         {/* Bottom Line */}
         <div className="bg-[#7FBD4D]/10 rounded-[16px] p-[48px] print:break-inside-avoid">
-          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[24px]">
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[12px]">
             Bottom Line
           </div>
           <p className="text-[24px] leading-[32px] text-black font-regular">
