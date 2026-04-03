@@ -83,6 +83,11 @@ export default function ExecutiveOnePager() {
           </div>
         </div>
 
+        {/* Details — At Risk / Blocked rows from Roadmap Status */}
+        <div className="mb-[48px]">
+          <RoadmapLinkedRisks />
+        </div>
+
         {/* Progress This Month */}
         <div className="mb-[48px] print:break-inside-avoid">
           <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[24px]">
@@ -142,11 +147,6 @@ export default function ExecutiveOnePager() {
           </div>
         </div>
 
-        {/* Key Risks — driven by At Risk / Blocked rows in Roadmap Status */}
-        <div className="mb-[48px]">
-          <RoadmapLinkedRisks />
-        </div>
-
         {/* Next 30 Days */}
         <div className="mb-[48px] print:break-inside-avoid">
           <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
@@ -172,7 +172,7 @@ export default function ExecutiveOnePager() {
 
         {/* Live roadmap (embedded tool) */}
         <div className="mb-[48px] print:hidden">
-          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[24px]">
             Roadmap
           </div>
           <div className="relative border border-gray-200 rounded-[12px] overflow-hidden bg-gray-50 h-[min(560px,70vh)] min-h-[320px]">
@@ -211,7 +211,7 @@ export default function ExecutiveOnePager() {
         {/* Why This Matters + Value Snapshot (below embedded roadmap) */}
         <div className="grid grid-cols-2 gap-[48px] mb-[48px] print:break-inside-avoid">
           <div>
-            <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+            <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#FE8C31] mb-[24px]">
               Why This Matters
             </div>
             <ul className="space-y-[16px]">
@@ -225,7 +225,7 @@ export default function ExecutiveOnePager() {
                   key={i}
                   className="flex items-start gap-[12px]"
                 >
-                  <div className="w-[8px] h-[8px] rounded-full bg-[#1BA5DE] mt-[10px] flex-shrink-0" />
+                  <div className="w-[8px] h-[8px] rounded-full bg-[#FE8C31] mt-[10px] flex-shrink-0" />
                   <span className="text-[18px] leading-[28px] text-gray-700">
                     {item}
                   </span>
@@ -235,8 +235,8 @@ export default function ExecutiveOnePager() {
           </div>
 
           <div>
-            <div className="text-[14px] font-bold tracking-[0.15em] text-[#7FBD4D] mb-[24px]">
-              VALUE SNAPSHOT
+            <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+              Value Snapshot
             </div>
             <div className="space-y-[20px]">
               {[
@@ -287,21 +287,9 @@ export default function ExecutiveOnePager() {
           </div>
         </div>
 
-        {/* Bottom Line */}
-        <div className="bg-[#7FBD4D]/10 rounded-[16px] p-[48px] print:break-inside-avoid">
-          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[12px]">
-            Bottom Line
-          </div>
-          <p className="text-[24px] leading-[32px] text-black font-regular">
-            We are shifting from designing interfaces to
-            delivering production-ready systems—enabling faster,
-            scalable, and more consistent product delivery.
-          </p>
-        </div>
-
         {/* Reference */}
         <div className="mt-[48px] print:break-inside-avoid">
-          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
+          <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[24px]">
             Reference
           </div>
           <div className="grid grid-cols-1 items-start gap-[16px] sm:grid-cols-2">

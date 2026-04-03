@@ -39,11 +39,11 @@ export const roadmapStatusRows: RoadmapStatusRow[] = [
     milestone: "Resourcing decision needed",
     riskDetail: {
       issues:
-        "Ownership, escalation, and contribution rules are not yet anchored with executive sponsors. One person still spans design-system design and engineering, so adoption work competes with foundation delivery and will not scale past current pilot volume.",
+        "Ownership, escalation, and contribution rules are not yet anchored with executive sponsors. One person still spans design-system design and engineering, so adoption work competes with foundation delivery and will not scale past current pilot volume. We are still trying to find partners in Product and Engineering who can act as liaisons—carrying day-to-day alignment on what ships, when exceptions apply, and how partner requests flow into the design system team.",
       currentlyDoing:
-        "Drafting governance guardrails, supporting the Documents MVT pilot, and sequencing RFCs and contribution paths. Surfacing capacity data to leadership so tradeoffs (depth vs. breadth) are explicit.",
+        "Drafting governance guardrails, supporting the Documents MVT pilot, and sequencing RFCs and contribution paths. Surfacing capacity data to leadership so tradeoffs (depth vs. breadth) are explicit, and socializing the need for named Product and Engineering liaison roles.",
       neededToUnblock:
-        "A leadership decision on dedicated system ownership and FTE allocation, plus agreement on operating cadence (review board, intake, exceptions). Without that, milestone “Resourcing decision needed” in Roadmap Status cannot close.",
+        "Product:\n• Name a product liaison to co-own intake and prioritization for design-system work against roadmap tradeoffs.\n• Represent partner teams in governance forums and help socialize standards and adoption expectations.\n\nEngineering:\n• Name an engineering liaison to co-sign technical standards, review contributions, and answer implementation questions quickly.\n• Align sprint capacity for shared fixes and migrations that depend on the React baseline.\n\nBeyond liaisons: a leadership decision on dedicated system ownership and FTE allocation, plus agreement on operating cadence (review board, intake, exceptions). Without that, the Roadmap Status milestone “Resourcing decision needed” cannot close.",
     },
   },
   {
