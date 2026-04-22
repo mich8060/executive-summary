@@ -33,53 +33,61 @@ export default function ExecutiveOnePager() {
           <div className="mb-4 text-lg font-bold leading-snug tracking-normal text-[#1BA5DE] sm:mb-5 sm:text-xl sm:leading-normal md:mb-6 md:text-2xl lg:text-[24px] lg:leading-[32px]">
             Roadmap Status
           </div>
-          <div className="overflow-x-auto overflow-hidden rounded-lg border border-gray-200 sm:rounded-[12px]">
-            <table className="w-full min-w-[600px] sm:min-w-[680px] md:min-w-[720px]">
-              <thead className="bg-gray-50">
-                <tr>
-                  <th className="px-3 py-3 text-left text-xs font-bold font-semibold text-gray-700 sm:px-4 sm:py-3.5 sm:text-sm md:px-6 md:py-4 md:text-[14px]">
-                    Initiative
-                  </th>
-                  <th className="px-3 py-3 text-left text-xs font-semibold text-gray-700 sm:px-4 sm:py-3.5 sm:text-sm md:px-6 md:py-4 md:text-[14px]">
-                    Outcome
-                  </th>
-                  <th className="px-3 py-3 text-left text-xs font-semibold text-gray-700 sm:px-4 sm:py-3.5 sm:text-sm md:px-6 md:py-4 md:text-[14px]">
-                    Next Milestone
-                  </th>
-                  <th className="px-3 py-3 text-left text-xs font-semibold text-gray-700 sm:px-4 sm:py-3.5 sm:text-sm md:px-6 md:py-4 md:text-[14px]">
-                    Status
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {roadmapRows.map((row, i) => (
-                  <tr
-                    key={i}
-                    className="border-t border-gray-200"
-                  >
-                    <td className="px-3 py-3 text-sm font-bold text-black sm:px-4 sm:py-4 sm:text-base md:px-6 md:py-5 md:text-[16px]">
-                      {row.initiative}
-                    </td>
-                    <td className="px-3 py-3 text-sm text-gray-700 sm:px-4 sm:py-4 sm:text-base md:px-6 md:py-5 md:text-[16px]">
-                      {row.outcome}
-                    </td>
-                    <td className="px-3 py-3 text-sm text-gray-700 sm:px-4 sm:py-4 sm:text-base md:px-6 md:py-5 md:text-[16px]">
-                      {row.milestone}
-                    </td>
-                    <td className="px-3 py-3 text-right sm:px-4 sm:py-4 md:px-6 md:py-5">
-                      <span
-                        className={`inline-block whitespace-nowrap rounded-full px-2.5 py-0.5 text-center text-xs font-semibold sm:px-3 sm:py-1 sm:text-[13px] md:px-[12px] md:py-[4px] md:text-[14px] ${row.statusTextClass ?? "text-white"}`}
-                        style={{
-                          backgroundColor: row.statusColor,
-                        }}
-                      >
-                        {row.status}
-                      </span>
-                    </td>
+          <div className="overflow-hidden rounded-lg border border-gray-200 sm:rounded-[12px]">
+            <div className="max-w-full min-w-0 touch-pan-x overflow-x-auto overscroll-x-contain [-webkit-overflow-scrolling:touch] md:overflow-x-visible">
+              <table className="w-full min-w-0 table-fixed text-balance md:min-w-[720px] md:table-auto">
+                <colgroup>
+                  <col className="w-[24%] md:w-auto" />
+                  <col className="w-[30%] md:w-auto" />
+                  <col className="w-[30%] md:w-auto" />
+                  <col className="w-[16%] md:w-auto" />
+                </colgroup>
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-2 py-2.5 text-left text-[11px] font-bold leading-tight text-gray-700 sm:px-4 sm:py-3.5 sm:text-sm md:px-6 md:py-4 md:text-[14px]">
+                      Initiative
+                    </th>
+                    <th className="px-2 py-2.5 text-left text-[11px] font-semibold leading-tight text-gray-700 sm:px-4 sm:py-3.5 sm:text-sm md:px-6 md:py-4 md:text-[14px]">
+                      Outcome
+                    </th>
+                    <th className="px-2 py-2.5 text-left text-[11px] font-semibold leading-tight text-gray-700 sm:px-4 sm:py-3.5 sm:text-sm md:px-6 md:py-4 md:text-[14px]">
+                      Next Milestone
+                    </th>
+                    <th className="px-2 py-2.5 text-left text-[11px] font-semibold leading-tight text-gray-700 sm:px-4 sm:py-3.5 sm:text-sm md:px-6 md:py-4 md:text-[14px]">
+                      Status
+                    </th>
                   </tr>
-                ))}
+                </thead>
+                <tbody>
+                  {roadmapRows.map((row, i) => (
+                    <tr
+                      key={i}
+                      className="border-t border-gray-200"
+                    >
+                      <td className="break-words px-2 py-2.5 text-xs font-bold leading-snug text-black sm:px-4 sm:py-4 sm:text-base sm:leading-normal md:px-6 md:py-5 md:text-[16px]">
+                        {row.initiative}
+                      </td>
+                      <td className="break-words px-2 py-2.5 text-xs leading-snug text-gray-700 sm:px-4 sm:py-4 sm:text-base sm:leading-normal md:px-6 md:py-5 md:text-[16px]">
+                        {row.outcome}
+                      </td>
+                      <td className="break-words px-2 py-2.5 text-xs leading-snug text-gray-700 sm:px-4 sm:py-4 sm:text-base sm:leading-normal md:px-6 md:py-5 md:text-[16px]">
+                        {row.milestone}
+                      </td>
+                      <td className="px-2 py-2.5 text-right align-top sm:px-4 sm:py-4 md:px-6 md:py-5">
+                        <span
+                          className={`inline-block max-w-full whitespace-nowrap rounded-full px-2 py-0.5 text-center text-[10px] font-semibold sm:px-3 sm:py-1 sm:text-[13px] md:px-[12px] md:py-[4px] md:text-[14px] ${row.statusTextClass ?? "text-white"}`}
+                          style={{
+                            backgroundColor: row.statusColor,
+                          }}
+                        >
+                          {row.status}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
               </tbody>
             </table>
+            </div>
           </div>
         </div>
 
@@ -326,9 +334,9 @@ export default function ExecutiveOnePager() {
               <a
                 key={i}
                 href={item.href}
-                className="flex w-full items-start justify-between gap-[12px] bg-gradient-to-br from-[#1BA5DE]/5 to-[#1BA5DE]/10 border-2 border-[#1BA5DE]/20 rounded-[12px] p-[24px] hover:border-[#1BA5DE] hover:shadow-lg transition-all duration-200"
+                className="flex w-full items-start justify-between gap-3 rounded-lg border-2 border-[#1BA5DE]/20 bg-gradient-to-br from-[#1BA5DE]/5 to-[#1BA5DE]/10 p-4 transition-all duration-200 hover:border-[#1BA5DE] hover:shadow-lg sm:gap-[12px] sm:rounded-[12px] sm:p-5 md:p-6"
               >
-                <div className="text-[16px] leading-[24px] text-black font-semibold">
+                <div className="text-sm font-semibold leading-snug text-black sm:text-base sm:leading-normal md:text-[16px] md:leading-[24px]">
                   {item.text}
                 </div>
                 <svg
@@ -352,12 +360,12 @@ export default function ExecutiveOnePager() {
         </div>
 
         {/* Contact */}
-        <div className="mt-[32px] text-[14px] text-gray-600 italic">
+        <div className="mt-6 text-xs italic leading-relaxed text-gray-600 sm:mt-8 sm:text-sm md:mt-[32px] md:text-[14px]">
           *Questions? Contact Michael Stevens or Aaron Tate, Director of UX Experience Design.
         </div>
 
         {/* Footer */}
-        <div className="mt-[60px] text-right text-[14px] font-semibold text-gray-400">
+        <div className="mt-8 text-right text-xs font-semibold text-gray-400 sm:mt-12 sm:text-sm md:mt-[60px] md:text-[14px]">
           CHG Healthcare
         </div>
       </div>

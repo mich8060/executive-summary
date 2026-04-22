@@ -10,18 +10,18 @@ type Props = {
 function LocumsmartPendingDetail() {
   return (
     <div
-      className="rounded-[10px] border-l-[4px] border-[#9CA3AF] bg-[#D1D5DB]/25 pl-[20px] pr-[16px] py-[16px]"
+      className="rounded-lg border-l-[4px] border-[#9CA3AF] bg-[#D1D5DB]/25 py-3 pl-4 pr-3 sm:rounded-[10px] sm:py-4 sm:pl-5 sm:pr-4 md:py-4 md:pl-5 md:pr-4"
       data-pending-detail="locumsmart"
     >
-      <div className="mb-[12px] flex flex-wrap items-baseline gap-[12px] gap-y-[6px]">
-        <h3 className="text-[20px] font-bold text-black">
+      <div className="mb-2 flex flex-wrap items-baseline gap-2 gap-y-1 sm:mb-3 sm:gap-3 md:mb-[12px] md:gap-[12px]">
+        <h3 className="text-lg font-bold text-black sm:text-xl md:text-[20px]">
           Locumsmart Deployment
         </h3>
-        <span className="inline-block shrink-0 whitespace-nowrap rounded-full bg-[#D1D5DB] px-[10px] py-[2px] text-[12px] font-semibold text-gray-900">
+        <span className="inline-block shrink-0 whitespace-nowrap rounded-full bg-[#D1D5DB] px-2 py-0.5 text-[11px] font-semibold text-gray-900 sm:px-[10px] sm:py-[2px] sm:text-[12px]">
           Pending
         </span>
       </div>
-      <p className="text-[16px] leading-[26px] text-gray-700">
+      <p className="text-sm leading-relaxed text-gray-700 sm:text-base sm:leading-relaxed md:text-[16px] md:leading-[26px]">
         We are working with cross-functional (XFN) partners to prioritize the
         Locumsmart refactoring. Full deployment on design-system patterns stays
         pending until that work is sequenced alongside other product
@@ -39,10 +39,10 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
     return (
       <div className={`print:break-inside-avoid ${className}`}>
         <div>
-          <div className="mb-[12px] text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D]">
+          <div className="mb-2 text-lg font-bold leading-snug tracking-normal text-[#7FBD4D] sm:mb-3 sm:text-xl md:mb-[12px] md:text-2xl lg:text-[24px] lg:leading-[32px]">
             Details
           </div>
-          <p className="mb-[24px] text-[15px] leading-[24px] text-gray-600">
+          <p className="mb-4 text-sm leading-relaxed text-gray-600 sm:mb-5 sm:text-[15px] sm:leading-normal md:mb-6 md:leading-[24px]">
             Context for{" "}
             <span className="font-semibold text-gray-800">Roadmap Status</span>{" "}
             items that need more than the table shows.
@@ -56,10 +56,10 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
   return (
     <div className={`print:break-inside-avoid ${className}`}>
       <div>
-        <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#7FBD4D] mb-[12px]">
+        <div className="mb-2 text-lg font-bold leading-snug tracking-normal text-[#7FBD4D] sm:mb-3 sm:text-xl md:mb-[12px] md:text-2xl lg:text-[24px] lg:leading-[32px]">
           Details
         </div>
-        <p className="text-[15px] leading-[24px] text-gray-600 mb-[24px]">
+        <p className="mb-4 text-sm leading-relaxed text-gray-600 sm:mb-5 sm:text-[15px] sm:leading-normal md:mb-6 md:leading-[24px]">
           Directly tied to{" "}
           <span className="font-semibold text-gray-800">Roadmap Status</span>{" "}
           items marked{" "}
@@ -69,7 +69,7 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
           below.
         </p>
 
-        <div className="space-y-[28px]">
+        <div className="space-y-5 sm:space-y-6 md:space-y-[28px]">
           {riskRows.map((row) => {
             const isBlocked = row.status === "Blocked";
             const accent = isBlocked
@@ -79,14 +79,14 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
             return (
               <div
                 key={row.initiative}
-                className={`rounded-[10px] border-l-[4px] pl-[20px] pr-[16px] py-[16px] ${accent}`}
+                className={`rounded-lg border-l-[4px] py-3 pl-4 pr-3 sm:rounded-[10px] sm:py-4 sm:pl-5 sm:pr-4 md:py-4 md:pl-5 md:pr-4 ${accent}`}
               >
-                <div className="flex flex-wrap items-baseline gap-[12px] gap-y-[6px] mb-[14px]">
-                  <h3 className="text-[20px] font-bold text-black">
+                <div className="mb-3 flex flex-wrap items-baseline gap-2 gap-y-1 sm:mb-3.5 sm:gap-3 md:mb-[14px] md:gap-[12px]">
+                  <h3 className="text-lg font-bold text-black sm:text-xl md:text-[20px]">
                     {row.initiative}
                   </h3>
                   <span
-                    className={`inline-block shrink-0 whitespace-nowrap rounded-full px-[10px] py-[2px] text-[12px] font-semibold ${
+                    className={`inline-block shrink-0 whitespace-nowrap rounded-full px-2 py-0.5 text-[11px] font-semibold sm:px-[10px] sm:py-[2px] sm:text-[12px] ${
                       row.statusTextClass ?? "text-white"
                     }`}
                     style={{ backgroundColor: row.statusColor }}
@@ -96,9 +96,9 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
                 </div>
 
                 {row.riskDetail ? (
-                  <dl className="space-y-[16px] text-[16px] leading-[26px] text-gray-700">
+                  <dl className="space-y-3 text-sm leading-relaxed text-gray-700 sm:space-y-4 sm:text-base sm:leading-relaxed md:space-y-[16px] md:text-[16px] md:leading-[26px]">
                     <div>
-                      <dt className="font-bold text-gray-900 mb-[4px]">
+                      <dt className="mb-1 font-bold text-gray-900 sm:mb-1.5 md:mb-[4px]">
                         What are the issues?
                       </dt>
                       <dd className="whitespace-pre-line">
@@ -106,7 +106,7 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
                       </dd>
                     </div>
                     <div>
-                      <dt className="font-bold text-gray-900 mb-[4px]">
+                      <dt className="mb-1 font-bold text-gray-900 sm:mb-1.5 md:mb-[4px]">
                         What is currently being done?
                       </dt>
                       <dd className="whitespace-pre-line">
@@ -114,7 +114,7 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
                       </dd>
                     </div>
                     <div>
-                      <dt className="font-bold text-gray-900 mb-[4px]">
+                      <dt className="mb-1 font-bold text-gray-900 sm:mb-1.5 md:mb-[4px]">
                         What is needed to unblock?
                       </dt>
                       <dd className="whitespace-pre-line">
