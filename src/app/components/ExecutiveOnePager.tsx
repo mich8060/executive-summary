@@ -147,6 +147,32 @@ export default function ExecutiveOnePager() {
           </div>
         </div>
 
+        {/* Accomplishments — 2025 & Q1 2026 */}
+        <div className="mb-[48px] print:break-inside-avoid">
+          <div className="mb-[24px] text-[24px] font-bold leading-[32px] tracking-normal text-[#FE8C31]">
+            Accomplishments in 2025 and Q1 2026
+          </div>
+          <ul className="grid grid-cols-1 gap-x-[40px] gap-y-[16px] sm:grid-cols-2">
+            {[
+              "Built shared infrastructure that lets us ship UI across CompHealth, Weatherby, and LocumSmart without rebuilding from scratch each time",
+              "Created a triage model that routes design work by business impact — so high-priority initiatives get speed, and lower-priority work gets efficiency",
+              "Accelerated S&P launch by an estimated 3 weeks by reusing pre-built components instead of designing from zero",
+              "Positioned our design system as the UI layer for AI squad delivery in SE/FSP — so AISquads can ship faster without design becoming a bottleneck",
+              "Eliminated the gap between design and code — components built once in Figma now ship directly as production-ready React, cutting rework between design and engineering",
+            ].map((text, i) => (
+              <li key={i} className="flex min-w-0 gap-[14px]">
+                <span
+                  className="mt-[7px] size-[10px] shrink-0 bg-[#FE8C31]"
+                  aria-hidden
+                />
+                <span className="text-[17px] leading-[28px] text-gray-800">
+                  {text}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Next 30 Days */}
         <div className="mb-[48px] print:break-inside-avoid">
           <div className="text-[24px] font-bold leading-[32px] tracking-normal text-[#1BA5DE] mb-[24px]">
