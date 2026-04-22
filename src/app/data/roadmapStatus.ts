@@ -31,7 +31,7 @@ export const roadmapStatusRows: RoadmapStatusRow[] = [
     milestone: "React component validation",
   },
   {
-    initiative: "Governance Model",
+    initiative: "Partnership Model",
     status: "At Risk",
     statusColor: "#FACC15",
     statusTextClass: "text-gray-900",
