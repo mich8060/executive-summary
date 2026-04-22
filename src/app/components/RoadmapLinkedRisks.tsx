@@ -17,7 +17,7 @@ function LocumsmartPendingDetail() {
         <h3 className="text-[20px] font-bold text-black">
           Locumsmart Deployment
         </h3>
-        <span className="inline-block shrink-0 rounded-full bg-[#D1D5DB] px-[10px] py-[2px] text-[12px] font-semibold text-gray-900">
+        <span className="inline-block shrink-0 whitespace-nowrap rounded-full bg-[#D1D5DB] px-[10px] py-[2px] text-[12px] font-semibold text-gray-900">
           Pending
         </span>
       </div>
@@ -86,7 +86,7 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
                     {row.initiative}
                   </h3>
                   <span
-                    className={`inline-block px-[10px] py-[2px] rounded-full text-[12px] font-semibold shrink-0 ${
+                    className={`inline-block shrink-0 whitespace-nowrap rounded-full px-[10px] py-[2px] text-[12px] font-semibold ${
                       row.statusTextClass ?? "text-white"
                     }`}
                     style={{ backgroundColor: row.statusColor }}
