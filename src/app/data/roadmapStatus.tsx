@@ -1,3 +1,10 @@
+import type { ReactNode } from "react";
+
+const roadmapOutcomeLinkClass =
+  "font-semibold text-[#1BA5DE] underline decoration-[#1BA5DE]/45 underline-offset-2 hover:text-[#1793c4] hover:decoration-[#1BA5DE]";
+
+const DOCUMENTS_MVT_PROTOTYPE_HREF = "https://unified-design-system-docs-zgkp.vercel.app/";
+
 export type RoadmapRiskDetail = {
   issues: string;
   currentlyDoing: string;
@@ -8,7 +15,7 @@ export type RoadmapStatusRow = {
   initiative: string;
   status: string;
   statusColor: string;
-  outcome: string;
+  outcome: ReactNode;
   milestone: string;
   statusTextClass?: string;
   /** Present for At Risk / Blocked rows — drives Key Risks section */
@@ -20,14 +27,38 @@ export const roadmapStatusRows: RoadmapStatusRow[] = [
     initiative: "React Production Baseline",
     status: "In Progress",
     statusColor: "#7FBD4D",
-    outcome: "Teams can build directly from DS React components",
+    outcome: (
+      <>
+        Teams can build directly from DS React components.{" "}
+        <a
+          href="https://unified-design-system-docs-zgkp.vercel.app/"
+          className={roadmapOutcomeLinkClass}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Documentation
+        </a>
+      </>
+    ),
     milestone: "Component library expansion",
   },
   {
-    initiative: "Documents MVT Pilot",
+    initiative: "Documents AISquad Pilot",
     status: "In Progress",
     statusColor: "#7FBD4D",
-    outcome: "Validated DS → React delivery model",
+    outcome: (
+      <>
+        Validated DS → React delivery model.{" "}
+        <a
+          href="https://documents-aisquad.vercel.app/"
+          className={roadmapOutcomeLinkClass}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Prototype
+        </a>
+      </>
+    ),
     milestone: "React component validation",
   },
   {
