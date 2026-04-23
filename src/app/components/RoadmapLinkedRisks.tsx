@@ -112,7 +112,7 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
                       <dd className="whitespace-pre-line">
                         <p className="mb-3">Building the React foundation and supporting the Documents MVT pilot as the first production adoption case.</p>
                         <p className="mb-3">Drafting the intake, review, and exception paths so the system can operate as shared infrastructure rather than a request queue.</p>
-                        <p>Surfacing capacity data to leadership so the depth-versus-breadth tradeoff is explicit, and making the case for named Product and Engineering liaisons</p>
+                        <p>Surfacing capacity data to leadership so the depth-versus-breadth tradeoff is explicit, and making the case for named Product and Engineering partners</p>
                       </dd>
                     </div>
                     <div>
@@ -122,7 +122,7 @@ export function RoadmapLinkedRisks({ rows, className = "" }: Props) {
                       <dd className="whitespace-pre-line">
                         <p className="italic">To enable the below, leadership needs to:</p>
                         <ul style={{ listStyleType: 'disc', paddingLeft: '32px', marginBottom: 16, display:'flex', flexDirection:'column', gap:8 }}>
-                            <li>Name a Product liaison and an Engineering liaison to co-own intake, prioritization, and technical review with the design system team.</li>
+                            <li>Name a Product partner and an Engineering partner to co-own intake, prioritization, and technical review with the design system team.</li>
                             <li>Make a resourcing decision on dedicated system ownership and FTE allocation.</li>
                         </ul>
                         <p className="italic">From the Product Partner (some examples):</p>

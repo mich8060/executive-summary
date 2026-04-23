@@ -54,7 +54,7 @@ export default function ExecutiveOnePager() {
 
   return (
     <div className="relative w-full min-h-screen bg-white overflow-auto">
-      <div className="mx-auto max-w-[1400px] px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-12 lg:px-16 lg:py-16 xl:px-24 xl:py-20 2xl:px-[110px] 2xl:py-[80px]">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 md:px-10 md:py-12 lg:px-16 lg:py-16 xl:px-24 xl:py-20 2xl:px-[110px] 2xl:py-[80px]">
         {/* Header */}
         <div className="mb-8 text-base print:break-inside-avoid sm:mb-10 md:mb-12 lg:text-[24px]">
           <h1 className="mb-1 text-[1.65rem] font-bold leading-tight text-black sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight lg:text-[48px] lg:leading-[1.05]">
