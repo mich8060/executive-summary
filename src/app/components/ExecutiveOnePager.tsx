@@ -355,12 +355,6 @@ export default function ExecutiveOnePager() {
           </div>
         </div>
 
-        <div
-          className="my-16 border-t border-gray-300 sm:my-20 md:my-24 lg:my-28"
-          role="separator"
-          aria-hidden
-        />
-
         {/* Live roadmap (embedded tool) */}
         <div className="mb-8 print:hidden sm:mb-10 md:mb-12">
           <div className="mb-4 text-lg font-bold leading-snug tracking-normal text-[#7FBD4D] sm:mb-5 sm:text-xl sm:leading-normal md:mb-6 md:text-2xl lg:text-[24px] lg:leading-[32px]">
@@ -398,6 +392,12 @@ export default function ExecutiveOnePager() {
             </a>
           </div>
         </div>
+
+        <div
+          className="my-16 border-t border-gray-300 sm:my-20 md:my-24 lg:my-28"
+          role="separator"
+          aria-hidden
+        />
 
         {/* Why This Matters + Value Snapshot (below embedded roadmap) */}
         <div className="mb-8 grid grid-cols-1 gap-8 print:break-inside-avoid sm:mb-10 md:mb-12 md:grid-cols-2 md:gap-10 lg:gap-12">
