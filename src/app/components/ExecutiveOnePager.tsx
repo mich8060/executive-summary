@@ -141,25 +141,22 @@ export default function ExecutiveOnePager() {
             itself—so the Design System feels tangible, not abstract.
           </p>
           <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-3 md:gap-5 lg:gap-6">
-            <article className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm print:break-inside-avoid">
-              <div className="relative aspect-[4/3] bg-gray-100">
-                <a
-                  href="https://unified-design-system-docs-zgkp.vercel.app/docs/components/button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group absolute inset-0 block cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1BA5DE] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                  aria-label="Open Button component documentation in a new tab"
-                >
-                  <img
-                    src="/showcase/button-component-documentation.png"
-                    alt="Design system docs: Button component with Tailwind variants preview and JSX example"
-                    className="h-full w-full object-cover object-top transition-transform duration-200 group-hover:scale-[1.02] group-focus-visible:scale-[1.02]"
-                    loading="lazy"
-                  />
-                </a>
+            <a
+              href="https://unified-design-system-docs-zgkp.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow print:break-inside-avoid hover:border-gray-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1BA5DE] focus-visible:ring-offset-2"
+            >
+              <div className="relative h-44 w-full shrink-0 overflow-hidden bg-gray-100 sm:h-48 md:h-52 lg:h-56">
+                <img
+                  src="/showcase/button-component-documentation.png"
+                  alt=""
+                  className="h-full w-full object-cover object-top transition-transform duration-200 group-hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
               <div className="flex flex-1 flex-col gap-1.5 border-t border-gray-100 p-4 sm:gap-2 sm:p-5">
-                <h3 className="text-base font-bold leading-snug text-black sm:text-lg">
+                <h3 className="text-base font-bold leading-snug text-black transition-colors group-hover:text-[#1BA5DE] sm:text-lg">
                   New React patterns in the library
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-600 sm:text-[15px]">
@@ -167,77 +164,57 @@ export default function ExecutiveOnePager() {
                   you can see in code, not just on a slide.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm print:break-inside-avoid">
-              <div className="relative aspect-[4/3] bg-gray-100">
-                <a
-                  href="https://documents-aisquad.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group absolute inset-0 block cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1BA5DE] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                  aria-label="Open Documents AI Squad MVT pilot app in a new tab"
-                >
-                  <img
-                    src="/showcase/documents-aisquad-pilot.png"
-                    alt="Documents dashboard: search, document categories with status, and overview sidebar in the pilot UI"
-                    className="h-full w-full object-cover object-top transition-transform duration-200 group-hover:scale-[1.02] group-focus-visible:scale-[1.02]"
-                    loading="lazy"
-                  />
-                </a>
+            <a
+              href="https://documents-aisquad.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow print:break-inside-avoid hover:border-gray-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1BA5DE] focus-visible:ring-offset-2"
+            >
+              <div className="relative h-44 w-full shrink-0 overflow-hidden bg-gray-100 sm:h-48 md:h-52 lg:h-56">
+                <img
+                  src="/showcase/documents-aisquad-pilot.png"
+                  alt=""
+                  className="h-full w-full object-cover object-top transition-transform duration-200 group-hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
               <div className="flex flex-1 flex-col gap-1.5 border-t border-gray-100 p-4 sm:gap-2 sm:p-5">
-                <h3 className="text-base font-bold leading-snug sm:text-lg">
-                  <a
-                    href="https://documents-aisquad.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black underline-offset-2 transition-colors hover:text-[#1BA5DE] hover:underline"
-                  >
-                    Documents AI Squad pilot UI
-                  </a>
+                <h3 className="text-base font-bold leading-snug text-black transition-colors group-hover:text-[#1BA5DE] sm:text-lg">
+                  Documents AI Squad pilot UI
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-600 sm:text-[15px]">
                   Design-to-code workflow showing up as real screens—proof the
                   system can carry a squad from research to production-ready UI.
                 </p>
               </div>
-            </article>
+            </a>
 
-            <article className="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm print:break-inside-avoid">
-              <div className="relative aspect-[4/3] bg-gray-100">
-                <a
-                  href="https://unified-design-system-docs-zgkp.vercel.app/docs/foundations/colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group absolute inset-0 block cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1BA5DE] focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                  aria-label="Open Colors foundations documentation in a new tab"
-                >
-                  <img
-                    src="/showcase/uds-accent-colors-documentation.png"
-                    alt="Unified Design System documentation: accent color scales for charts, badges, and emphasis, with CSS variable naming"
-                    className="h-full w-full object-cover object-top transition-transform duration-200 group-hover:scale-[1.02] group-focus-visible:scale-[1.02]"
-                    loading="lazy"
-                  />
-                </a>
+            <a
+              href="https://unified-design-system-docs-zgkp.vercel.app/docs/foundations/colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow print:break-inside-avoid hover:border-gray-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1BA5DE] focus-visible:ring-offset-2"
+            >
+              <div className="relative h-44 w-full shrink-0 overflow-hidden bg-gray-100 sm:h-48 md:h-52 lg:h-56">
+                <img
+                  src="/showcase/uds-accent-colors-documentation.png"
+                  alt=""
+                  className="h-full w-full object-cover object-top transition-transform duration-200 group-hover:scale-[1.02]"
+                  loading="lazy"
+                />
               </div>
               <div className="flex flex-1 flex-col gap-1.5 border-t border-gray-100 p-4 sm:gap-2 sm:p-5">
-                <h3 className="text-base font-bold leading-snug sm:text-lg">
-                  <a
-                    href="https://unified-design-system-docs-zgkp.vercel.app/docs/foundations/colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black underline-offset-2 transition-colors hover:text-[#1BA5DE] hover:underline"
-                  >
-                    The library, end to end
-                  </a>
+                <h3 className="text-base font-bold leading-snug text-black transition-colors group-hover:text-[#1BA5DE] sm:text-lg">
+                  The library, end to end
                 </h3>
                 <p className="text-sm leading-relaxed text-gray-600 sm:text-[15px]">
                   Documentation and token layer that make the system legible for
                   partners who need to understand scope, reuse, and where to plug in.
                 </p>
               </div>
-            </article>
+            </a>
           </div>
         </div>
 
