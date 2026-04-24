@@ -142,7 +142,7 @@ export default function ExecutiveOnePager() {
           </p>
           <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-3 md:gap-5 lg:gap-6">
             <a
-              href="https://unified-design-system-docs-zgkp.vercel.app"
+              href="https://unified-design-system-docs-zgkp.vercel.app/docs/getting-started/app-shell"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-shadow print:break-inside-avoid hover:border-gray-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1BA5DE] focus-visible:ring-offset-2"
